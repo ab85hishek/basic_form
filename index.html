@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<a class="webtext" href="index.html">Home page</a><br>
+   <div id="div1">
+   <h2>Provide Your Details</h2>
+   <!--we can also use POST in place of GET to avoid the display of data in URL-->
+   <form method="GET">
+   First Name: <input type="text" name="firtname" placeholder =" first name" required><br>
+   Last Name:  <input type="text" name="lastname" placeholder="last name"><br>
+   Email :     <input type="email" name="email" required><br>
+   Password:   <input type="password" min="5" name="password" ><br>
+   Birthday: <input type="date" name="DOB" required><br>
+   Gender :
+   <input type="radio" name="Gender" value="male">Male
+   <input type="radio" name="Gender" value="female">Female
+   <input type="radio" name="Gender" value="other">other<br>
+   Pets :
+   <input type="checkbox" name="Cat">Cat
+   <input type="checkbox" name="dog">dog
+   <input type="checkbox" name="horse">horse<br>
+   No of vechicles :
+   <select name="No of vechicles">
+   	<option value="1">1</option>
+   	<option value="2">2</option>
+   	<option value="3+">3 or more</option>
+   </select><br>
+   <input type="submit" value="Register Now">
+   <input type="reset">
+</form>
+</div>
+</body>
+</html>
